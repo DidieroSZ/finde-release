@@ -42,7 +42,7 @@
     padding-top: 0;
 }
     .inner--header--container{
-        background-image: url('./RECURSOS/IMGS/cosy-cafe-interior.jpeg');
+        background-image: url('../RECURSOS/IMGS/cosy-cafe-interior.jpeg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
