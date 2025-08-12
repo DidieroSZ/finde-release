@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="Sitio de FINDE ">
+    <meta name="author" content="FINDE">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./RECURSOS/LOGOS/Icono_C.png">
+
+    <title>FINDE</title>
+
+    <!-- https://dribbble.com/shots/23908986-Tour-Travel-Landing-Page-Wanderlo -->
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/landing.css">
+    <link rel="stylesheet" href="./CSS/site.css">
+    <!-- FONT -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=zodiak@100,101,300,301,400,401,700,701,800,801,900,901&display=swap" rel="stylesheet">
+
+    <!-- BoxIcon --> 
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     
+
+    <!-- JS -->
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="general--sections nav--container d-flexx d-row">
+        <div class="item--navContainer d-flexx d-row">
+            <a href="finde.html" class="rounded-pill btn-gen btn-pri trans navG--items" >Inicio </a>
+            <a href="" class="rounded-circle d-flexx btn-gen btn-sec btn-circle trans navG--items" > <i class='bx bx-question-mark' ></i></a>
+        </div>
+        <a href="/index.html" class="item--navContainer d-flexx d-row links logo--navContainer">
+           <figure class="image-container">
+                <img src="./RECURSOS/LOGOS/Icono_C.png" alt="Logo FIN" class="gen-img logo--image" style="view-transition-name: logo-1;" loading="lazy">
+           </figure>
+           <h1 class="logo--text">FINDE</h1>
+        </a>
+        <div class="item--navContainer d-flexx d-row">
+            <a href="" class="rounded-pill btn-gen btn-sec trans navG--items" >Iniciar sesión </a>
+            <a href="" class="rounded-circle d-flexx btn-gen btn-pri btn-circle trans navG--items" > <i class='bx bx-menu-alt-right'></i></a>
+        </div>
+    </nav>
+    <!-- END NAV -->
+
+    <!-- HEADER--CATEGORIES -->
+    <header class="general--sections headetCategories--container">
+        <section class="gen-size  rounded-5 d-flexx d-col inner--headetCategories">
+            <img src="./RECURSOS/IMGS/head-restaurant.jpeg" class="gen-img img--headetCategories" loading="lazy">
+            
+            <div class="contenido--headetCategories d-flexx d-col">
+                <h2>Sumérgete en un mundo de aventuras con nuestras categorías diseñadas para ti.</h2>
+                <p>Explora los mejores lugares para salir, relajarte, comer delicioso, vivir experiencias culturales o simplemente pasarla bien. Desde planes tranquilos hasta noches inolvidables, aquí encuentras todo lo que hace especial tu fin de semana.</p>
+            </div>
+            <div class="layerDark--headetCategories"></div>
+            <div class="filter--headetCategories d-flexx d-col">
+                 <div class="categorie--filter rounded-4 d-flexx d-row item--filtersHeaderCategorias">
+                    <span class="filter--itemCategorie d-flexx">
+                        <input type="radio" value="restaunates" id="categoriaFilter01" name="categoriaSelector" class="input--categoriaFilter" checked>
+                        <label for="categoriaFilter01" class="label--categoriaFilter rounded-4 d-flexx trans point">Restaurantes</label>
+                    </span>
+                    <span class="filter--itemCategorie d-flexx">
+                        <input type="radio" value="recreacion" id="categoriaFilter02" name="categoriaSelector" class="input--categoriaFilter">
+                        <label for="categoriaFilter02" class="label--categoriaFilter rounded-4 d-flexx trans point">Recreación</label>
+                    </span>
+                    <span class="filter--itemCategorie d-flexx">
+                        <input type="radio" value="nocturna" id="categoriaFilter03" name="categoriaSelector" class="input--categoriaFilter">
+                        <label for="categoriaFilter03" class="label--categoriaFilter rounded-4 d-flexx trans point">Vida Nocturna</label>
+                    </span>
+                    <span class="filter--itemCategorie d-flexx">
+                        <input type="radio" value="cultura" id="categoriaFilter04" name="categoriaSelector" class="input--categoriaFilter">
+                        <label for="categoriaFilter04" class="label--categoriaFilter rounded-4 d-flexx trans point">Cultura y Arte</label>
+                    </span>
+                    <span class="filter--itemCategorie d-flexx">
+                        <input type="radio" value="bienestar" id="categoriaFilter05" name="categoriaSelector" class="input--categoriaFilter">
+                        <label for="categoriaFilter05" class="label--categoriaFilter rounded-4 d-flexx trans point">Bienestar</label>
+                    </span>
+                </div>
+
+                <div class="gruped--filter rounded-4 d-flexx d-row item--filtersHeaderCategorias">
+                    <select class="form-select form-control form-control-md rounded-4 focus-ring focus-ring-light border input--grupedFilter">
+                        <option value="cerca">Cerca de</option>
+                        <option value="en" selected>En</option>
+                    </select>
+                    <input type="text" id="" placeholder="Ciudad" name="" class="form-control form-control-md rounded-4 focus-ring focus-ring-light border input--grupedFilter" autocomplete="false">
+                    <select class="form-select form-control form-control-md rounded-4 focus-ring focus-ring-light border input--grupedFilter">
+                        <option value="caro">$$$$</option>
+                        <option value="medio">$$$</option>
+                        <option value="economico">$$</option>
+                        <option value="barato">$</option>
+                    </select>
+                    <button type="button" class="rounded-4 btn-gen btn-sec trans border">Buscar</button>
+                </div>
+               
+            </div>
+        </section>
+    </header>
+    <!-- END HEADER--CATEGORIES -->
+
+
+    <!-- MODAL PLACES -->
+    <div class="modal fade" id="modalPlaces" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="main--modal--places d-flexx d-row">
+                    <div class="left--modal--part modal--part rounded-5 d-flexx d-col">
+                        <!-- <div class="btns--modal d-flexx d-row">
+                            <button type="button" class="rounded-circle d-flexx btn-gen btn-pri btn-circle trans">
+                                <i class='bx bx-left-arrow-alt' ></i>
+                            </button>
+                            <button type="button" class="rounded-circle d-flexx btn-gen btn-pri btn-circle trans">
+                                <i class='bx bx-right-arrow-alt' ></i>
+                            </button>
+                        </div> -->
+                        <div class="left--modal--item slider--modal d-flexx">
+                            <section class="splide main-slide" id="main-slide">
+                                <div class="splide__arrows ">
+                                    <button class="splide__arrow splide__arrow--prev btns--card--carrousel item--customArrows" >
+                                        <span class="rounded-circle d-flexx btn-gen btn-pri btn-circle trans d-flexx">
+                                            <i class='bx bx-left-arrow-alt' ></i>
+                                        </span>
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next btns--card--carrousel item--customArrows">
+                                        <span class="rounded-circle d-flexx btn-gen btn-pri btn-circle trans d-flexx">
+                                            <i class='bx bx-right-arrow-alt' ></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="./RECURSOS/IMGS/37be0cce-338c-4a28-aad7-dfeb614fac05.jpeg" class="gen-img">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./RECURSOS/IMGS/b2cab0c5-4e2d-470a-8a60-ec2b296dcaba.jpeg" class="gen-img">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="./RECURSOS/IMGS/cd04d916-32cc-4501-aa11-b1a12051af6d.jpeg" class="gen-img">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="left--modal--item horarios--modal">
+
+                        </div>
+                    </div>
+                    <div class="right--modal--part modal--part rounded-5 d-flexx d-col">
+                        <div class="btns--modal d-flexx d-row">
+                            <button type="button" class="rounded-circle d-flexx btn-gen btn-sec btn-circle trans">
+                                <i class='bx  bxs-heart'  ></i> 
+                            </button>
+                            <button type="button" class="rounded-circle d-flexx btn-gen btn-sec btn-circle trans">
+                                <i class='bx  bxs-share'  ></i> 
+                            </button>
+                            <button type="button" class="rounded-circle d-flexx btn-gen btn-pri btn-circle trans" data-bs-dismiss="modal" aria-label="Close" style="margin-left: auto;">
+                                <i class='bx  bx-x'  ></i> 
+                            </button>
+                        </div>
+                        <div class="info--modal--text rounded-4">
+                            <h3> <strong>Las Moras Café </strong> </h3>
+                            <small>Calle Madero 121, León, Guanajuato.</small>
+                            <br><br>
+                            <p>Un rincón encantador donde puedes disfrutar de una taza de café recién molido, acompañada de pasteles caseros y bocadillos ligeros. Las Moras Cafe es perfecto para relajarte y disfrutar de una buena lectura o una conversación amena.</p>
+                        </div>
+                        <div class="card--sections card--metrics d-flexx d-row">
+                            <span class="card--metric rounded-4">
+                                <small>Calif.</small>
+                                <p> <strong>4.9</strong></p>
+                            </span>
+                            <span class="card--metric rounded-4">
+                                <small>Top</small>
+                                <p> <strong>50</strong></p>
+                            </span>
+                            <span class="card--metric rounded-4">
+                                <small>Visitas</small>
+                                <p> <strong>+1500</strong></p>
+                            </span>
+                            <span class="card--metric rounded-4">
+                                <small>Reseñas</small>
+                                <p> <strong>234</strong></p>
+                            </span>
+                        </div>
+                        <div class="map--modal rounded-4 border">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14882.487362084114!2d-101.73846576276856!3d21.16744254112253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bc739e1a7930f%3A0x6940dbfcc80aff06!2sHyatt%20Centric%20Campestre%20Le%C3%B3n!5e0!3m2!1ses!2smx!4v1754686557705!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL PLACES -->
+
+    <!-- LUGARES RECOMENDADOS -->
+    <!-- END LUGARES RECOMENDADOS -->
+
+
+    <!-- MAIN PLACESES -->
+    <main class="general--sections split--categories--container d-flexx d-row">
+        <aside class="filter--aside">
+            <h3 class="mb-3">400 resultados</h3>
+
+            <button class="rounded-pill btn-gen btn-pri trans" type="reset">Limpiar</button>
+
+            <div class="accordion accordion-flush" id="filterSort">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button custom--accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSort" aria-expanded="true" aria-controls="collapseSort">
+                            Ordenar
+                        </button>
+                    </h2>
+                    <div id="collapseSort" class="accordion-collapse collapse show" data-bs-parent="#filterSort">
+                        <div class="accordion-body">
+                            <span class="input--radio point">
+                                <input class="input--radio--input" value="default" type="radio" name="sort--filter" id="Fdefault">
+                                <div class="input--radio--circle"></div>
+                                <label class="input--radio--label trans point" for="Fdefault">Recomendados</label>
+                            </span>
+                            <span class="input--radio point">
+                                <input class="input--radio--input" value="default" type="radio" name="sort--filter" id="Fpopular">
+                                <div class="input--radio--circle"></div>
+                                <label class="input--radio--label trans point" for="Fpopular">Más Popular</label>
+                            </span>
+                            <span class="input--radio point">
+                                <input class="input--radio--input" value="default" type="radio" name="sort--filter" id="Frating">
+                                <div class="input--radio--circle"></div>
+                                <label class="input--radio--label trans point" for="Frating">Calificación</label>
+                            </span>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="fillterPrice">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button custom--accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+                            Rango de Precios
+                        </button>
+                    </h2>
+                    <div id="collapsePrice" class="accordion-collapse collapse show" data-bs-parent="#fillterPrice">
+                        <div class="accordion-body ">
+                            <div class="w-100 d-flexx d-row">
+                                 <span class="input--select">
+                                <input class="input--select--input" type="checkbox" value="barato" id="select-barato">
+                                <label for="select-barato" class="input--select--box border rounded-3 point trans">
+                                    <span class="select--box--checked"> 
+                                        <i class='bx  bx-check'></i> 
+                                    </span>
+                                    $
+                                </label>
+                            </span>
+                            <span class="input--select">
+                                <input class="input--select--input" type="checkbox" value="medio" id="select-economico">
+                                <label for="select-economico" class="input--select--box border rounded-3 point trans">
+                                    <span class="select--box--checked"> 
+                                        <i class='bx  bx-check'></i> 
+                                    </span>
+                                    $$
+                                </label>
+                            </span>
+                            <span class="input--select">
+                                <input class="input--select--input" type="checkbox" value="caro" id="select-medio">
+                                <label for="select-medio" class="input--select--box border rounded-3 point trans">
+                                    <span class="select--box--checked"> 
+                                        <i class='bx  bx-check'></i> 
+                                    </span>
+                                    $$$
+                                </label>
+                            </span>
+                            <span class="input--select">
+                                <input class="input--select--input" type="checkbox" value="caro" id="select-caro">
+                                <label for="select-caro" class="input--select--box border rounded-3 point trans">
+                                    <span class="select--box--checked"> 
+                                        <i class='bx  bx-check'></i> 
+                                    </span>
+                                    $$$$
+                                </label>
+                            </span>
+                            </div>
+                           
+                            <hr>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="accordion accordion-flush" id="filterOther">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button custom--accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOther" aria-expanded="true" aria-controls="collapseOther">
+                            Otros
+                        </button>
+                    </h2>
+                    <div id="collapseOther" class="accordion-collapse collapse show" data-bs-parent="#filterOther">
+                        <div class="accordion-body">
+                            <span class="input--radio point">
+                                <input class="input--radio--input" value="default" type="radio" name="sort--filter" id="Fdefault">
+                                <div class="input--radio--circle"></div>
+                                <label class="input--radio--label trans point" for="Fdefault">Eventos</label>
+                            </span>
+                            <span class="input--radio point">
+                                <input class="input--radio--input" value="default" type="radio" name="sort--filter" id="Fpopular">
+                                <div class="input--radio--circle"></div>
+                                <label class="input--radio--label trans point" for="Fpopular">Ofertas</label>
+                            </span>
+                            <hr>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </aside>
+        
+        <section class="main--categories">
+            
+
+            <card class="card--places border rounded-4 trans d-flexx d-col" data-id="">
+                <figure class="card--sections card--picture">
+                    <img src="./RECURSOS/IMGS/cd04d916-32cc-4501-aa11-b1a12051af6d.jpeg" class="gen-img card--img  rounded-3" loading="lazy">
+                </figure>
+                <div class="card--sections card--info">
+                    <p> <strong>Enigma Rooms</strong> </p>
+                    <small> Blvd. Paseo de los Insurgentes 2404, León, Guanajuato. </small>
+                </div>
+                <div class="card--sections card--metrics d-flexx d-row">
+                    <span class="card--metric rounded-4">
+                        <small>Calif.</small>
+                        <p> <strong>4.9</strong></p>
+                    </span>
+                    <span class="card--metric rounded-4">
+                        <small>Top</small>
+                        <p> <strong>50</strong></p>
+                    </span>
+                    <span class="card--metric rounded-4">
+                        <small>Visitas</small>
+                        <p> <strong>+1500</strong></p>
+                    </span>
+                </div>
+                <div class="card--sections card--btns d-flexx d-row">
+                    <button class="rounded-4 btn-gen btn-sec trans" type="button" data-id-map="">Ubicación</button>
+                    <!-- <button class="rounded-3 btn-gen btn-pri trans" type="button" data-id-place="">Conocer</button> -->
+                    <button type="button" class="rounded-4 btn-gen btn-pri trans" data-bs-toggle="modal" data-bs-target="#modalPlaces">
+                        Conocer
+                    </button>
+                </div>
+            </card>
+
+            
+        </section>
+    </main>
+    <!-- END MAIN PLACESES -->
+
+
+    <!-- END FOOTER -->
+    <footer class="general--sections footer--container">
+        <div class="row h-100">
+            <div class="col-8">
+                <div class="gen-size rounded-5 cards--footer links-footer d-flexx d-col">
+                    <a href="#" class="links trans">FAQs</a>
+                    <a href="#" class="links trans">Cuenta</a>
+                    <a href="#" class="links trans">Nosotros</a>
+                    <a href="#" class="links trans">Términos y Condiciones</a>
+                    <a href="#" class="links trans">Política de Privacidad</a>
+                    <h1 class="title--footer">FINDE</h1>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="gen-size rounded-5 cards--footer">
+                    <img src="./RECURSOS/IMGS/cd04d916-32cc-4501-aa11-b1a12051af6d.jpeg" class="gen-img" loading="lazy">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="/JS/gsap-main.js"></script>
+
+    <!-- SLIDERS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+        <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var main = new Splide( '#main-slide', {
+                type: 'fade',
+                heightRatio: 0.5,
+                /* pagination: false, */
+                arrows: true,
+                cover: true,
+                /* perPage: 1, */
+            } );
+
+            /* var thumbnails = new Splide( '#thumbnail-slider', {
+                rewind: true,
+                fixedWidth: 104,
+                fixedHeight: 58,
+                isNavigation: true,
+                gap: 10,
+                focus: 'center',
+                pagination: false,
+                cover: true,
+                dragMinThreshold: {
+                    mouse: 4,
+                    touch: 10,
+                },
+                breakpoints : {
+                    640: {
+                        fixedWidth: 66,
+                        fixedHeight: 38,
+                    },
+                },
+            }); */
+
+           /*  main.sync( thumbnails ); */
+            main.mount();
+            /* thumbnails.mount(); */
+        });
+    </script>
+</body>
+</html>

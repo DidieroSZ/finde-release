@@ -1,0 +1,25 @@
+DESAROLLO RESPONSIVO, OBLIGATORIO
+
+
+LOG IN
+Con usuarios predefinidos e informacion, a ver si es posible hacerlo con FireBase y su base de datos
+
+
+Tutorial al momento de crear nueva cuenta:
+https://driverjs.com/
+
+Detalles de subrayados y cosas varias:
+https://roughnotation.com/
+
+
+Mapas interactivos:
+https://leafletjs.com/
+
+Filtrado especial de lugares:
+https://isotope.metafizzy.co/filtering
+
+
+
+En caso de requerir un buzon de ayuda:
+https://formsubmit.co/api-documentation
+

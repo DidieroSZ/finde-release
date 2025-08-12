@@ -1,0 +1,23 @@
+HOME
+Section 01: Mostrar info, call to action 
+
+Section 02: Categorias 
+
+Section 03: Call to action
+
+Section 04: Lugares
+
+Section 05: FOOTER
+
+
+Páginas:
+Home
+Usuario
+Log In / Sign In
+Lugar Detalle
+Lugares
+
+Pricing
+Terminos y condiciones
+Nosotros 
+FAQs
