@@ -1,3 +1,10 @@
+/* PRINCIPAL STYLE SHEET */
+/* 
+    INDEX: 
+    1.0 - NAV MENU
+    2.0 - HEADER
+    3.0 - CATEGORIES CALL
+*/
 
 
 /* NAV / MENU */
@@ -90,12 +97,13 @@
             justify-content: start;
         }
             .carousel-inner{
-                height: 85%;
+                height: 80%;
+                
             }
                 .btns--card--carrousel{
                     aspect-ratio: 1/1;
                     position: relative;
-                    height: 15%;
+                    height: 10%;
                     width: unset;
                     bottom: unset;
                     top: unset;
@@ -105,6 +113,10 @@
                 }
                     .btns--card--carrousel:hover{
                         opacity: 1;
+                        color: var(--Blanco) !important;
+                    }
+                    .btns--card--carrousel:focus{
+                        color: var(--Negro);
                     }
                     .btns--card--carrousel > .btn-pri{
                         height: 100%;
@@ -432,8 +444,9 @@
                         height: 3rem;
                         width: 100%;
                         padding: 1rem;
-                        line-height: 2rem;
+                        line-height: 1cap;
                         color: var(--Blanco);
+                        text-align: center;
                     }
 /* END HEADER--CATEGORIES */
 

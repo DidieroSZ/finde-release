@@ -1,27 +1,3 @@
-/* gsap.from('.logo--image', {
-    delay:  0,
-    duration: 1,
-    ease: "back.out",
-    rotate: 360,
-});
-
-gsap.from('.item--menu--navLand', {
-    delay: 0.75,
-    y: -100,
-    ease: "circ.out",
-    stagger: 0.25,
-    clearProps: "transform"
-});
-
-gsap.from('.items--menu--lateral', {
-    delay: 1,
-    duration: 2,
-    x: 500,
-    ease: "back.out",
-    stagger: 0.25,
-    clearProps: "transform"
-}); */
-
 let catchFrames = document.querySelectorAll('.catch--frame');
 
 catchFrames.forEach((catchFrame, index) => {
@@ -36,7 +12,7 @@ catchFrames.forEach((catchFrame, index) => {
     });
 });
 
-gsap.from('.first--img-item', {
+gsap.from('.img--animation--landing', {
     y: 700,
     delay: 1,
     duration: 1,
