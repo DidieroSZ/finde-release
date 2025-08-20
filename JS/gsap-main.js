@@ -16,10 +16,10 @@ gsap.from(logoText, {
     y: -100,
 })  */
 
-gsap.from(".navG--items", {
+/* gsap.from(".navG--items", {
     ease: "power3",
     y: -100,
     duration: 0.5,
     stagger: 0.25,
     clearProps: "transform"
-}) 
+})  */

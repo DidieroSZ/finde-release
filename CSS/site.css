@@ -40,6 +40,59 @@
             color: var(--Negro);
             /* font-weight: bold; */
         }
+
+        .main--modal--nav{
+            width: 100%;
+            height: 100%;
+            padding: var(--Padding04);
+            padding-left: 0;
+            padding-right: 0;
+        }
+            .general--nav--section{
+                width: 100%;
+                height: 50%;
+                background-color: var(--Blanco);
+                overflow: hidden;
+                padding: var(--Padding04);
+                justify-content: space-between;
+            }   
+                .card--nav--link{
+                    width: 100%;
+                    height: auto;
+                    max-height: 20%;
+                    color: var(--Negro);
+                    padding: var(--Padding02);
+                    overflow: hidden;
+                    align-items: start;
+                    flex-grow: 1;
+                    justify-content: space-between;
+                }
+                    .card--nav--link > figure{
+                        width: 100%;
+                        height: auto;
+                        max-height: 40%;
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                    }
+                .bottom--nav--section{
+                    width: 100%;
+                    height: auto;
+                    max-height: 25%;
+                    background-color: var(--Gris);
+                    padding: var(--Padding02);
+                    justify-content: space-between;
+                    align-items: start;
+                }
+                    .custom--links--nav{
+                        height: auto;
+                        align-items: start;
+                        gap: 0;
+                        color: var(--Negro);0
+                    }
+                        .custom--links--nav > a {
+                            color: var(--Negro);
+                            font-size: 0.9rem;
+                        }
 /* END NAV / MENU */
 
 
@@ -78,9 +131,6 @@
                     border-width: 1.5px;
                     border-color:  var(--Blanco);
                 }
-            .bottom--text--headerCont{
-                
-            }
             .bottom--text--headerCont > svg{
                 height: 2rem;
                 aspect-ratio: 1/1;
@@ -156,9 +206,6 @@
                             width: 50%;
                             overflow: hidden;
                             position: relative;
-                        }
-                        .picture--card--carrousel{
-                            
                         }
                             .picture--card--carrousel img{
                                 object-fit: cover;
@@ -370,29 +417,27 @@
     }
         .img--headetCategories{
             position: absolute;
-            filter: blur(5px);
+            filter: blur(8px);
             z-index: 0;
         }
         .layerDark--headetCategories{
             width: 100%;
             height: 100%;
             position: absolute;
-            background: linear-gradient(to bottom, transparent 10% , black);
+            background: linear-gradient(to bottom, transparent 50% , rgba(0, 0, 0, 0.922) 85%);
             z-index: 1;
         }
         .contenido--headetCategories{
             z-index: 2;
             position: absolute;
-            height: 100%;
+            height: auto;
             width: 50%;
             padding: var(--Padding04);
-            top: 0;
+            top:  0;
             left: 0;
-            justify-content: space-between;
+            justify-content: start;
             align-items: start;
-        }
-        .contenido--headetCategories > h2{
-            /* text-align: justify; */
+            gap: var(--Padding03);
         }
         .filter--headetCategories{
             width: 50%;
@@ -453,8 +498,8 @@
 
 /* MODAL PLACES */
 .modal{
-    background-color: #00000089;
-    backdrop-filter: blur(10px);
+    background-color: var(--NegroT);
+    backdrop-filter: blur(5px);
 }
 
 .modal-dialog{
@@ -506,9 +551,6 @@
                         width: 100%;
                         overflow: hidden;
                     }
-                    .main-slide img{
-
-                    }
 
             .right--modal--part{
                 justify-content: start;
@@ -541,9 +583,9 @@
 
 
 /* MAIN PLACESES */
-.recomendacion--container{
+/* .recomendacion--container{
 
-}
+} */
 .split--categories--container{
     position: relative;
     align-items: start;    
@@ -578,9 +620,6 @@
         }
             .input--radio--input{
                 display: none;
-            }
-            .input--radio--label{
-
             }
             
             .input--radio--circle{
