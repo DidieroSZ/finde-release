@@ -22,6 +22,7 @@
     https://dribbble.com/shots/26341767-HOFIN-Real-Estate-Mobile-App
     https://dribbble.com/shots/26331217-HOFIN-Real-Estate-Dashboard
     https://dribbble.com/shots/26307608-HOFIN-Real-Estate-Responsive-Website
+    https://mx.pinterest.com/pin/767723067774071812/
     -->
 
     <!-- BOOTSTRAP -->
@@ -38,7 +39,9 @@
     <link href="https://api.fontshare.com/v2/css?f[]=zodiak@100,101,300,301,400,401,700,701,800,801,900,901&display=swap" rel="stylesheet">
 
     <!-- BoxIcon --> 
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
      
 
     <!-- JS -->
@@ -133,7 +136,7 @@
     <!-- END NAV -->
 
     <!-- HEADER -->
-    <header class="general--sections header--container d-flexx d-row">
+    <!-- <header class="general--sections header--container d-flexx d-row">
         <section class="general--sections rounded-5 inner--header--container">
 
             <article class="text--headerCont item--headerCont d-flexx d-col">
@@ -252,8 +255,134 @@
 
             </div>
         </section>
+    </header> -->
+    
+    <header class="general--sections header--container d-flexx d-row">
+        <article class="left--side--header side--header d-flexx d-col">
+            <div class="text--header">
+                <h2>
+                    Descubre <span class="mark--low">Nuevos</span> <span class="mark--img rounded-pill"></span> 
+                    <span class="mark--low">Lugares y Experiencias</span> con
+                    <span class="mark--img rounded-pill"></span> Finde.
+                </h2>
+                <p>Encuentra los mejores planes para tu fin de semana: restaurantes, vida nocturna, cultura, entretenimiento y más. Todo en un solo lugar.</p>
+            </div>
+            <div class="cards--header d-flexx d-row">
+                <a href="" class="card--header rounded-4 border d-flexx d-col links">
+                    <img src="./RECURSOS/IMGS/Torre Eiffel Miniatura.png" class="gen-img">
+                    <div class="banner--card rounded-3">
+                        <p><strong>Torre Eiffel</strong></p>
+                        <div class="card--sections card--location d-flexx d-row">
+                            <small class="d-flexx d-row"><i class='bx  bxs-location'  ></i>  Paris, Francia</small>
+                            <small class="d-flexx d-row">|</small>
+                            <small class="d-flexx d-row"><i class='bx  bxs-bowling-ball'  ></i>  Recreación</small>
+                        </div>
+                    </div>
+                </a>
+                <div class="card--header rounded-4 border d-flexx d-col">
+                    <h3>Nuevas Experiencias</h3>
+                    <p>Descubre sitios únicos, desde rincones culturales y restaurantes increíbles, hasta planes nocturnos y actividades para relajarte.</p>
+                    <a href="categories.html" class="rounded-3 btn-gen btn-pri trans">Descubrir Más</a>
+                </div>
+            </div>
+        </article>
+        <aside class="right--side--header side--header rounded-4 d-flexx d-col">
+            <img src="./RECURSOS/IMGS/Torre Eiffel Spot.png" class="gen-img">
+            <div class="banner--card rounded-3">
+                <p><strong>Recreación y Entretenimiento</strong></p>
+                <p class="mb-4">Planes divertidos para todos los gustos y los mejores spots para fotos.</p>
+
+                <a href="categories.html" class="rounded-3 btn-gen btn-pri trans">Ver Actividades</a>
+            </div>
+
+            <div class="header--tooltip" id="tooltip--01">
+                <span class="cirlce--tooltip rounded-circle d-flexx items--header--tooltip"></span>
+                <span class="text--tooltip rounded-pill items--header--tooltip">Torre Eiffel</span>
+            </div>
+
+            <div class="header--tooltip" id="tooltip--02">
+                <span class="cirlce--tooltip rounded-circle d-flexx items--header--tooltip"></span>
+                <span class="text--tooltip rounded-pill items--header--tooltip">Spot</span>
+            </div>
+        </aside>
     </header>
     <!-- END HEADER -->
+
+
+    <!-- CALL ACTION FORM -->
+
+    <section class="general--sections form--call--action">
+        <form class="border gen-size rounded-4 form--bar d-flexx d-col">
+            <h3>Encuentra el mejor lugar de acuerdo a tus preferencias.</h3>
+            <div class="top--form--bar form--bar--items d-flexx d-row">
+                <!-- <p>Categorías:</p> -->
+                
+                <span class="input--select">
+                    <input class="input--select--input" type="checkbox" value="barato" id="select-Restaurantes">
+                    <label for="select-Restaurantes" class="input--select--box border rounded-3 point trans d-flexx">
+                        <span class="select--box--checked"> 
+                            <i class='bx  bx-check'></i> 
+                        </span>
+                            Restaurantes
+                    </label>
+                </span>
+                <span class="input--select">
+                    <input class="input--select--input" type="checkbox" value="barato" id="select-Entretenimiento">
+                    <label for="select-Entretenimiento" class="input--select--box border rounded-3 point trans d-flexx">
+                        <span class="select--box--checked"> 
+                            <i class='bx  bx-check'></i> 
+                        </span>
+                            Recreación y Entretenimiento
+                    </label>
+                </span>
+                <span class="input--select">
+                    <input class="input--select--input" type="checkbox" value="barato" id="select-Nocturna">
+                    <label for="select-Nocturna" class="input--select--box border rounded-3 point trans d-flexx">
+                        <span class="select--box--checked"> 
+                            <i class='bx  bx-check'></i> 
+                        </span>
+                            Vida Nocturna 
+                    </label>
+                </span>
+                <span class="input--select">
+                    <input class="input--select--input" type="checkbox" value="barato" id="select-Cultura">
+                    <label for="select-Cultura" class="input--select--box border rounded-3 point trans d-flexx">
+                        <span class="select--box--checked"> 
+                            <i class='bx  bx-check'></i> 
+                        </span>
+                            Cultura y Arte
+                    </label>
+                </span>
+                <span class="input--select">
+                    <input class="input--select--input" type="checkbox" value="barato" id="select-Salud">
+                    <label for="select-Salud" class="input--select--box border rounded-3 point trans d-flexx">
+                        <span class="select--box--checked"> 
+                            <i class='bx  bx-check'></i> 
+                        </span>
+                            Salud y Bienestar
+                    </label>
+                </span>
+            </div>
+            <div class="bottom--form--bar form--bar--items d-flexx d-row">
+                <select class="form-select form-control form-control-md rounded-3 focus-ring focus-ring-light border input--grupedFilter">
+                    <option value="cerca">Cerca de</option>
+                    <option value="en" selected>En</option>
+                </select>
+                <input type="text" id="" placeholder="Ciudad" name="" class="form-control form-control-md rounded-3 focus-ring focus-ring-light border input--grupedFilter" autocomplete="false">
+                <select class="form-select form-control form-control-md rounded-3 focus-ring focus-ring-light border input--grupedFilter">
+                    <option value="caro">$$$$</option>
+                    <option value="medio">$$$</option>
+                    <option value="economico">$$</option>
+                    <option value="barato">$</option>
+                </select>
+                <button type="button" class="rounded-3 btn-gen btn-sec trans border">Buscar</button>
+            </div>
+
+            
+        </form>
+    </section>
+    <!-- END CALL ACTION FORM -->
+
 
     <!-- CATEGORIES CALL  -->
     <section class="splide general--sections categories--container d-flexx d-col space-block" aria-label="Splide Basic HTML Example">
@@ -380,13 +509,17 @@
         </div>
     </section>
     <!-- END CATEGORIES CALL  -->
-    
-    
 
+
+    <!-- RECOMENDED PLACES -->
+    <!-- END RECOMENDED PLACES -->
+    
+    
+    <!-- FOOTER -->
     <footer class="general--sections footer--container">
         <div class="row h-100">
             <div class="col-8">
-                <div class="gen-size rounded-5 cards--footer links-footer d-flexx d-col">
+                <div class="gen-size rounded-4 cards--footer links-footer d-flexx d-col">
                     <a href="#" class="links trans">FAQs</a>
                     <a href="#" class="links trans">Cuenta</a>
                     <a href="#" class="links trans">Nosotros</a>
@@ -396,21 +529,21 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="gen-size rounded-5 cards--footer">
+                <div class="gen-size rounded-4 cards--footer">
                     <img src="./RECURSOS/IMGS/cd04d916-32cc-4501-aa11-b1a12051af6d.jpeg" class="gen-img" loading="lazy">
                 </div>
             </div>
 
         </div>
     </footer>
+    <!-- END FOOTER -->
+
 
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
     <!-- SLIDERS -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
-
     <script>
         document.addEventListener( 'DOMContentLoaded', function() {
             let splide = new Splide( '.splide' , {

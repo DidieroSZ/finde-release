@@ -97,6 +97,133 @@
 
 /* HEADER */
 .header--container{
+    height: 75vh;
+    flex-flow: row nowrap;
+    gap: var(--Padding04);
+}
+    .side--header{
+        width: 50%;
+        height: 100%;
+        flex-grow: 1;
+        overflow: hidden;
+        position: relative;
+    }
+    .left--side--header{
+        width: 40%;
+    }
+        .text--header{
+            height: 50%;
+        }
+        .text--header >  h2{
+            margin-bottom: var(--Padding04);
+        }
+            .mark--low{
+                color: var(--GrisDark);
+            }
+            .mark--img{
+                background-image: url(../RECURSOS/IMGS/cd04d916-32cc-4501-aa11-b1a12051af6d.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 7rem;
+                margin-top: 0.5rem;
+                height: auto;
+                aspect-ratio: 4/1;
+                padding: var(--Padding04);
+                display: inline-block;
+            }
+            .mark--img:nth-child(2){
+                background-image: url(../RECURSOS/IMGS/b2cab0c5-4e2d-470a-8a60-ec2b296dcaba.jpeg);
+            }
+
+        .cards--header{
+            height: 50%;
+            width: 100%;
+            gap: var(--Padding04);
+            align-items: end;
+            /* justify-content: stretch; */
+            flex-wrap: nowrap;
+        }
+            .card--header{
+                flex-grow: 1;
+                width: 50%;
+                height: 100%;
+                max-height: 300px;
+                padding: var(--Padding02);
+                position: relative;
+                overflow: hidden;
+                justify-content: end;
+                align-items: stretch;
+                color: var(--Negro);
+                gap: var(--Padding02);
+            }
+                .card--header > a{
+                    margin-top: auto;
+                }
+
+                .card--header > img{
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 50%;
+                    left: 50%;
+                }
+                .banner--card{
+                    width: 100%;
+                    height: fit-content;
+                    overflow: hidden;
+                    position: relative;
+                    background-color: var(--Blanco);
+                    padding: var(--Padding02);
+                }
+    .right--side--header{
+        justify-content: end;
+        align-items: start;
+        padding: var(--Padding02);
+    }
+        .right--side--header > img{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+        }
+        .right--side--header > .banner--card{
+            max-width: 45%;
+        }
+        .header--tooltip{
+            position: absolute;
+            min-width: 8rem;
+            aspect-ratio: 2/1;
+            transform: translate(-50%,-50%);
+            top: 10%;
+            left: 50%;
+        }
+        #tooltip--02{
+            min-width: 6rem;
+            top: 70%;
+            left: 80% ;
+        }
+            .items--header--tooltip{
+                position: absolute;
+            }
+            .cirlce--tooltip{
+                width: 1rem;
+                aspect-ratio: 1/1;
+
+                background-color: var(--Negro);
+                bottom: 0;
+                left: 0;
+            }
+            .text--tooltip{
+                background-color: var(--Blanco);
+                color: var(--Negro);
+                padding-block: var(--Padding02);
+                padding-inline: var(--Padding03);
+                top: 0;
+                right: 0;
+            }
+
+
+/* .header--container{
     height: 90vh;
     padding-top: 0;
 }
@@ -243,8 +370,54 @@
                                 -webkit-box-orient: vertical;
                                 line-clamp: 2;
                             }
+ */
 
-/* END HEADER */
+ /* END HEADER */
+
+/* FORM CALL ACTION */
+
+.form--call--action{
+    height: auto;
+    /* max-height: 30vh; */
+}
+    .form--bar{
+        padding: var(--Padding04);
+        align-items: start;
+        gap: var(--Padding04);
+    }
+            .form--bar--items{
+                width: 100%;
+                height: auto;
+            }
+            .top--form--bar{
+                justify-content: start;
+                gap: var(--Padding02);
+                flex-wrap: nowrap;
+            }
+                .top--form--bar .input--select{
+                    width: calc(100% / 5);
+                    flex-grow: 1;
+                }
+                .top--form--bar .input--select--box{
+                    padding: var(--Padding03);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: var(--Padding02);
+                    width: 100%;
+                }
+
+            .bottom--form--bar{
+                gap: var(--Padding02);
+                justify-content: stretch;
+                align-items: stretch;
+                flex-wrap: nowrap;
+            }
+                .bottom--form--bar > * {
+                    flex-grow: 1;
+                    width: calc(100% / 4);
+                }
+/* END FORM CALL ACTION */
 
 
 /* CATEGORIES CALL */
@@ -665,7 +838,7 @@
             .input--select--input{
                 display: none;
             }
-            .input--select--box{
+            .accordion-body .input--select--box{
                 padding: var(--Padding01) var(--Padding03);
                 display: flex;
                 justify-content: center;
@@ -680,7 +853,7 @@
                     color: var(--Blanco);
                 }
                 .input--select--input:checked + .input--select--box .select--box--checked {
-                    display: block;
+                    display: flex;
                 }
 
 
